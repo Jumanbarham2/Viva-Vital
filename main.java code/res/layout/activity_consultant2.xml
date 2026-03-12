@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cons_back">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/consultant1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cons2" />
+    </androidx.cardview.widget.CardView>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/YellowRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="5" />
+
+    <TextView
+        android:id="@+id/doctor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_bar"
+        android:layout_marginLeft="90dp"
+        android:gravity="center"
+        android:text="Malek Khalil AL Jemzawi"
+        android:textColor="#F72E2727"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/specialty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating_bar"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:text="🩺 Doctor Internal Medicine specialized in Adult Cardiology, Adult Vascular Diseases."
+        android:textColor="#F72E2727"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/specialty"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="📍 Amman، Gardens، Near ALGardens Hospital -comio Jordan Complex no.87- 101"
+        android:textColor="#F72E2727"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:text="📞 +9626 400 1111"
+        android:textColor="#F72E2727"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="19dp"
+        android:text="⏰ Available for online consultations everyday between [5-6pm]"
+        android:textColor="#F72E2727"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</RelativeLayout>

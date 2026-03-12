@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YellowRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorAccent">#FFD700</item>
+        <item name="colorControlNormal">#CCCCCC</item>
+         </style>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="NoHeaderNavView" parent="Widget.MaterialComponents.NavigationView">
+        <item name="headerLayout">@null</item>
+    </style>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+</resources>

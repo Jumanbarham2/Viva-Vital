@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Recipe_Sample">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/recipe_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/egg_spinach" />
+
+            <TextView
+                android:id="@+id/recipe_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Baked Eggs with Spinach"
+                android:textAlignment="center"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+                <TextView
+                    android:id="@+id/recipe_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/divider_horizontal_bright"
+                    android:padding="10dp"
+                    android:text="Cook Time\n7 minutes"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="0dp" />
+                <TextView
+                    android:id="@+id/recipe_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/divider_horizontal_bright"
+                    android:padding="10dp"
+                    android:text="Calories\n190-220 kcal"
+                    android:textAlignment="center"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+        <LinearLayout
+            android:id="@+id/ingredients_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox  android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="2 large eggs" />
+            <CheckBox                 android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1 cup fresh spinach (30g)" />
+            <CheckBox                 android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1 tsp olive oil (or butter)" />
+            <CheckBox                 android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="1 small garlic clove, minced" />
+            <CheckBox                 android:layout_marginLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="Salt and black pepper" />
+<CheckBox                 android:layout_marginLeft="20dp"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:text="1 tbsp grated cheese (optional)" /></LinearLayout>
+<TextView
+    android:id="@+id/recipe_instructions"
+    android:layout_marginLeft="20dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Instructions"
+android:textSize="18sp"
+android:textStyle="bold"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="8dp" />
+<TextView
+android:layout_marginBottom="20dp"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+    android:textStyle="italic"
+android:text="                               Serve and enjoy!"
+android:textSize="16sp" />
+    </LinearLayout>
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>

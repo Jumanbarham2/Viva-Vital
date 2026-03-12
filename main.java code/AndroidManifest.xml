@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_app"
+        android:label="Viva Vital"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vivavital"
+        tools:targetApi="31">
+        <activity
+            android:name=".Measurements_Result"
+            android:exported="false" />
+        <activity
+            android:name=".Recipe_Sample"
+            android:exported="false" />
+
+        <activity
+            android:name=".Recipe_Results"
+            android:exported="false" />
+        <activity
+            android:name=".No_Results"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment_Reminder2"
+            android:exported="false" />
+        <activity
+            android:name=".Consultant_3"
+            android:exported="false" />
+        <activity
+            android:name=".Consultant_2"
+            android:exported="false" />
+        <activity
+            android:name=".Consultant_1"
+            android:exported="false" />
+        <activity
+            android:name=".Deadly_Trio"
+            android:exported="false" />
+        <activity
+            android:name=".Meal_Plan"
+            android:exported="false" />
+        <activity
+            android:name=".Latest_Updates"
+            android:exported="false" />
+        <activity
+            android:name=".Exercise_Rec"
+            android:exported="false" />
+        <activity
+            android:name=".Dash"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Tracker"
+            android:exported="false" />
+        <activity
+            android:name=".Progress_Tracker"
+            android:exported="false" />
+        <activity
+            android:name=".Healthy_Recipes"
+            android:exported="false" />
+        <activity
+            android:name=".Fitness"
+            android:exported="false" />
+        <activity
+            android:name=".Medication"
+            android:exported="false" />
+        <activity
+            android:name=".Daily_Measurements"
+            android:exported="false" />
+        <activity
+            android:name=".Appointment_Reminder"
+            android:exported="false" />
+        <activity
+            android:name=".Vital_Measurements"
+            android:exported="false" />
+        <activity
+            android:name=".Hba1c"
+            android:exported="false" />
+        <activity
+            android:name=".Health_Status"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".DailyLog2"
+            android:exported="false" />
+        <activity
+            android:name=".DailyLog"
+            android:exported="true" />
+        <activity
+            android:name=".Wellness_Center"
+            android:exported="true"
+            android:theme="@style/Theme.App.TransparentStatus" />
+        <activity
+            android:name=".MainPage"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="false"
+            android:label="@string/title_activity_register_page"
+            android:theme="@style/Theme.Vivavital" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.TransparentStatus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

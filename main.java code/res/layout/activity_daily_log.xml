@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/blue">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Log"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:id="@+id/txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/rectangle_white"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/animationContainer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/txt"
+            android:layout_marginTop="45dp" >
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="250dp"
+           android:id="@+id/vital"
+           android:src="@drawable/vital"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/okay"
+                android:src="@drawable/okay"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/not_well"
+                android:src="@drawable/not_well"/>
+                  </FrameLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/greetingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Hi! How do you feel today?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/ll"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnVital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Vital!"
+            android:backgroundTint="@color/green"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnOkay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just Okay"
+android:textSize="16dp"
+            android:backgroundTint="@color/yellow"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/btnNotWell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Well"
+            android:textSize="16dp"
+            android:backgroundTint="@color/red"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btnSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="Skip"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:backgroundTint="@color/white"
+            android:id="@+id/btnNext"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Next >" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="400dp"
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+</RelativeLayout>

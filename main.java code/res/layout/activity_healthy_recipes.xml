@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Healthy_Recipes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:background="@drawable/recipes_header">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Healthy Recipes"
+                    android:textSize="22sp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It's time for:"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <RadioGroup android:layout_gravity="center"
+                android:id="@+id/mealTimeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Breakfast"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:buttonTint="#4CAF50"
+                    android:paddingStart="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/lunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Lunch"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:buttonTint="#4CAF50"
+                    android:paddingStart="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Dinner"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:buttonTint="#4CAF50"
+                    android:paddingStart="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/snack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:text="Snack"
+                    android:textSize="16sp"
+                    android:textColor="#000000"
+                    android:buttonTint="#4CAF50"
+                    android:paddingStart="5dp"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is there any kind of food you're allergic to?"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <com.example.vivavital.MultiSpinner
+                android:id="@+id/allergySpinner"
+                android:layout_width="200dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Food allergy selection. Tap to choose."
+                android:importantForAccessibility="yes"
+                android:paddingStart="12dp"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you prefer food to be free of:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:layout_marginLeft="50dp"
+                android:id="@+id/preferSpinner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="12dp"/>
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food preference:"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:layout_marginLeft="50dp"
+                android:id="@+id/preferenceSpinner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="12dp"/>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Search"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/blue"
+                android:textColor="#FFFFFF"
+                android:textSize="19sp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

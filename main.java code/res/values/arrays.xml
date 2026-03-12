@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>العربية</item>
+        <item>Français</item>
+        <item>Español</item>
+    </string-array>
+        <string-array name="allergy_options">
+            <item>None</item>
+            <item>Lactose</item>
+            <item>Eggs</item>
+            <item>Nuts</item>
+            <item>Gluten</item>
+            <item>Fish</item>
+            <item>Shellfish</item>
+            <item>Soy</item>
+            <item>Citrus fruits</item>
+        </string-array>
+        <string-array name="prefer_options">
+            <item>None</item>
+            <item>Preservatives</item>
+            <item>Artificial colors</item>
+            <item>Salt</item>
+            <item>Sugar</item>
+        </string-array>
+        <string-array name="preference_options">
+            <item>None</item>
+            <item>Vegetarian</item>
+            <item>Vegan</item>
+            <item>Keto</item>
+            <item>Low-carb</item>
+        </string-array>
+
+</resources>

@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Appointment Reminder"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/app_reminder"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your appointment for?"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/appointment_type"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:layout_marginTop="10dp"
+        android:hint="e.g., Diabetes check-up"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Which date is your appointment?"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+
+        />
+
+
+    <EditText
+        android:minHeight="48dp"
+        android:id="@+id/appointment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:gravity="center"
+        android:hint=" Day/ Month / Year"
+        android:inputType="date" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What time do you want to be reminded?"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold"
+        android:textSize="16dp"
+
+        />
+
+    <Button
+        android:id="@+id/pick_time"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Pick Time"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/time_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick_time"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:text="Time of reminder is: [2:00 PM]"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="140dp"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

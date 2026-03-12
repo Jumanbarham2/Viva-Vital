@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_new_activity_to_track"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:textColor="@color/black"
+        android:textStyle="italic"
+        android:minHeight="50dp"
+        android:id="@+id/activity_name_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#534D4D"
+        android:hint="@string/e_g_meditated_for_10_minutes"
+        android:inputType="textCapSentences"
+        android:maxLines="1"/>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome, Name!"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/taglineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Here's to a Vital life!"
+                android:textSize="17sp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/userButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="3dp"
+            app:title="">
+            <ImageButton
+                android:contentDescription="menu"
+                tools:ignore="UnusedAttribute"
+                android:visibility="visible"
+                android:id="@+id/menu_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/menu_vector"
+                android:clickable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_marginBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/status"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/recipes"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/recipes"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/fitness"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/fitness"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:contentDescription="medication"
+            android:id="@+id/medication"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/medication"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:id="@+id/activity"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/activity"
+            android:scaleType="centerCrop"/>
+
+        <ImageButton
+            android:contentDescription="activity"
+            android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="8dp"
+            android:background="@drawable/progress"
+            android:scaleType="centerCrop"/>
+    </GridLayout>
+
+    <ImageButton
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:text="Wellness Center"
+        android:id="@+id/wellness"
+        android:background="@drawable/wellness"
+        android:textColor="@android:color/white"
+        android:padding="16dp"/>
+</LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_height="400dp"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view"
+        android:layout_width="280dp"
+        android:visibility="visible"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/navigation_header"
+    tools:visibility="visible"
+    tools:layout_gravity="start"/>
+</androidx.drawerlayout.widget.DrawerLayout>

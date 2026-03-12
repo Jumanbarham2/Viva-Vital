@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Viva Vital"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="280dp"
+            android:layout_height="240dp"
+            android:src="@drawable/logo"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="2dp"
+        android:paddingTop="8dp"
+        android:text="   We are a team of young innovators committed to making health management easier for individuals with hypertension, with plans to expand in the future."
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/more_info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:justificationMode="inter_word"
+        android:text="   At Viva Vital, we prioritize your well-being and value your feedback. From tracking vitals to scheduling appointments and receiving health tips, we're here to support you. Together, let's make wellness a way of life."
+        android:textSize="15sp"
+        android:paddingTop="8dp"
+        android:lineSpacingExtra="2dp"/>
+
+    <TextView
+        android:id="@+id/contact_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   For suggestions or concerns, feel free to contact us at MJRH@gmail.com. Your voice matters!"
+        android:textSize="15sp"
+        android:paddingTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/blue"
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/blue_rectangle"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="With all our love and support, The Vital Team"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

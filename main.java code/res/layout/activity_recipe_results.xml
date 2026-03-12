@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Recipe_Results">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                android:background="@color/blue"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Result of Recipes"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/recipe1_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/egg_spinach_r"
+                    android:contentDescription="Baked Eggs with Spinach"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/recipe1_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baked Eggs with Spinach"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/recipe1_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/recipe1_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Time: 7 minutes"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe1_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe1_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/recipe1_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="205 kcal"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe1_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe1_time"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/recipe2_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/banana_pancakes"
+                    android:contentDescription="Banana Pancakes"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/recipe2_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Banana Pancakes"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/recipe2_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/recipe2_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Time: 12 minutes"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe2_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe2_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/recipe2_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="290 kcal"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe2_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe2_time"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            ڡة --!> ' وص Mediterranean Salad -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/recipe3_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/mediterranean_salad"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Mediterranean Salad"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/recipe3_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mediterranean Salad"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/recipe3_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/recipe3_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Time: 5 minutes"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe3_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe3_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/recipe3_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="275 kcal"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe3_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe3_time"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/recipe4_image"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/tuna_sandwich"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Tuna Sandwich"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    />
+                <TextView
+                    android:id="@+id/recipe4_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuna Sandwich"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toRightOf="@id/recipe4_image"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"/>
+                <TextView
+                    android:id="@+id/recipe4_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cook Time: 8 minutes"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe4_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe4_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:id="@+id/recipe4_calories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300 kcal"
+                    android:textSize="14sp"
+                    android:textColor="#666666"
+                    app:layout_constraintLeft_toRightOf="@id/recipe4_image"
+                    app:layout_constraintTop_toBottomOf="@id/recipe4_time"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

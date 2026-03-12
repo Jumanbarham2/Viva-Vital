@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    >
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/health_status"/>
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Health Status"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_daily_measurements"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/header"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/blue"
+        android:padding="16dp"
+        android:text="Daily Measurements"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <Button
+
+        android:id="@+id/btn_vital_measurements"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_daily_measurements"
+        android:text="Vital Measurements"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        />
+
+    <Button
+        android:id="@+id/btn_hba1c"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_vital_measurements"
+        android:text="HBA1C"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        />
+
+    <Button
+        android:id="@+id/btn_appointment_reminder"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_hba1c"
+        android:text="Appointment Reminder"
+        android:backgroundTint="@color/blue"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        />
+    <ImageView
+        android:id="@+id/health_status_image"
+        android:layout_width="420dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/btn_appointment_reminder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/health_status_png"/>
+
+</RelativeLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Page"
+        android:textStyle="bold"
+        android:textSize="23sp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/login_page"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginBottom="1dp"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="outline"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="#2F8F95"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter username"
+            android:inputType="text"
+            android:imeOptions="actionNext"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/UsernameError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#2F8F95"
+        app:boxBackgroundMode="outline"
+        android:layout_marginTop="25dp"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="#2F8F95"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/PasswordError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password must be at least 8 characters"
+        android:textColor="#FF0000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/LoginError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password must contain letters"
+        android:textColor="#FF0000"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/ForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Forgot Password?"
+        android:textColor="#2F8F95"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Login"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#2F8F95"
+        android:textColor="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Have not registered yet? "/>
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/register"
+            android:textColor="#2F8F95"
+            android:layout_marginTop="10sp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+</LinearLayout>

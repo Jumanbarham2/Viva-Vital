@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Vital Measurements"
+            android:textStyle="bold"
+            android:background="@drawable/blue_rectangle"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"/>
+
+        <!-- Date Section -->
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/edit_date_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/date_text_view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:text="Edit"
+            android:textSize="19sp"
+            android:backgroundTint="@color/blue"/>
+
+        <!-- Blood Pressure Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_text_view"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Blood Pressure (BP)"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_text_view"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Enter the Systolic and Diastolic data of mmHg"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/blood_pressure_systolic"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/date_text_view"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="80dp"
+            android:hint="S"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_text_view"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="80dp"
+            android:text="/"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/blood_pressure_diastolic"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/date_text_view"
+            android:layout_marginStart="230dp"
+            android:layout_marginTop="80dp"
+            android:hint="D"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Heart Rate Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blood_pressure_systolic"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Heart Rate (Pulse)"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/heart_rate"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/blood_pressure_systolic"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="BPM"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Oxygen Saturation Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heart_rate"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Oxygen Saturation (SpO₂)"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/oxygen_saturation"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/heart_rate"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="%"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Blood Glucose Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oxygen_saturation"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Blood Glucose"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/blood_glucose"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/oxygen_saturation"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="mg/dL"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Respiratory Rate Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blood_glucose"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Respiratory Rate (RR)"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/respiratory_rate"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/blood_glucose"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="BPM"
+            android:inputType="number"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Weight Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/respiratory_rate"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Weight"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/respiratory_rate"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="kg"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/weight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="@color/blue"
+            android:text="Update"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</ScrollView>
